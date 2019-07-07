@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tondeuse></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <form action="/position" method="post">
+    <div>
+      <label>Position initiale</label>
+      <input name="x" type='number' min="0" max="5" placeholder="1">
+      <input name="y" type='number' min="0" max="5" placeholder="1">
+      <input name="z" placeholder="W">
+    </div>
+    <div>
+      <label>Instruction</label>
+      <input name="instruction" placeholder="ADGDGD...">
+    </div>
+
+    <button type="submit">Go!</button>
+  </form>
+  <p>Position actuelle: <%= title %></p>
+</body>
+
+</html>
